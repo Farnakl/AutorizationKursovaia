@@ -1,0 +1,52 @@
+﻿<Page x:Class="ShoolProgram_Anayatov.Pages.Menus.PageMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ShoolProgram_Anayatov.Pages.Menus"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageMenu">
+
+    <Grid>
+        <StackPanel Margin="3">
+            <TextBlock Text = "Меню:" 
+                           Margin="10 0 5 1" 
+                           Width="130" 
+                           Height="25" 
+                           FontSize="20"  
+                           FontWeight="Bold" 
+                           Foreground="White"/>
+            <Button 
+                    Name="BtnAnaliz"
+                    Click="BtnAnaliz_Click"
+                Foreground="White"
+                    Content= "График"
+                    ></Button>
+            <Button
+                Margin="0 10 0 10" 
+                Foreground="White"
+                Name="GoToGridPage"  
+                Click="GoToGridPage_Click" 
+                Content="Продукты"></Button>
+            <Button 
+                Name="GoToTablePage"
+                Margin="0 0 0 10" 
+                Foreground="White"
+                Click="GoToTablePage_Click" 
+                Content="Сотрудники"></Button>
+            <Button 
+                Name="GoToProvidersPage"
+                Margin="0 0 0 10" 
+                Foreground="White"
+                Click="GoToProvidersPage_Click" 
+                Content="Поставщики"></Button>
+            <Button 
+                    Name="BtnRegist"
+                    Foreground="White"
+                    Click="BtnRegist_Click"
+                    Content= "История продажи"
+                    Margin="0 0 0 10"></Button>
+        </StackPanel>
+    </Grid>
+</Page>

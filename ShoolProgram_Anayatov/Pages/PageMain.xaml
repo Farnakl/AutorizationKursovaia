@@ -1,0 +1,39 @@
+﻿<Page x:Class="ShoolProgram_Anayatov.Pages.PageMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ShoolProgram_Anayatov.Pages"
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      mc:Ignorable="d" d:DesignWidth="800"
+      Title="График" Height="568">
+
+    <Grid>
+        <StackPanel>
+            <TextBox Width="200" Height="30" Text="График продаж - покупок "></TextBox>
+
+            <lvc:CartesianChart Height="500" Foreground="Black" Series="{Binding SeriesCollection}" Grid.Row="2" Margin="0, 0, 0, 0"  Zoom="X" Loaded="CartesianChart_Loaded_1">
+                <lvc:CartesianChart.AxisY >
+                    <lvc:Axis Title="Цены в рублях" Foreground="Black" Name="Y" MinValue="{Binding MinimumY}" MaxValue="{Binding MaximumY}" LabelFormatter="{Binding Formatter}">
+                        <lvc:Axis.Sections>
+
+                            
+                            <lvc:AxisSection Value="{Binding NominalConstraint}" StrokeThickness="1.5" DataLabel="True" StrokeDashArray="5" ToolTip="{Binding LowerSpecificationLimitToolTip}"/>
+
+                        </lvc:Axis.Sections>
+                    </lvc:Axis>
+                </lvc:CartesianChart.AxisY>
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Title="Дни месяца" Foreground="Black" Name="X" MinValue="{Binding MinimumY}" MaxValue="{Binding MaximumY}" LabelFormatter="{Binding Formatter}">
+                        <lvc:Axis.Sections>
+
+
+                            <lvc:AxisSection Value="{Binding NominalConstraint}" StrokeThickness="1.5" DataLabel="True" StrokeDashArray="5" ToolTip="{Binding LowerSpecificationLimitToolTip}"/>
+
+                        </lvc:Axis.Sections>
+                    </lvc:Axis>
+                </lvc:CartesianChart.AxisX>
+            </lvc:CartesianChart>
+        </StackPanel>
+    </Grid>
+</Page>

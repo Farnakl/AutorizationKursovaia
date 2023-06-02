@@ -1,0 +1,70 @@
+﻿<Window x:Class="ShoolProgram_Anayatov.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShoolProgram_Anayatov"
+        Icon="./Resources/iconVkusvil.jpeg"
+        mc:Ignorable="d"
+        Title="ВкусВилл" Height="450" Width="800"
+        MinHeight="450" MinWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+
+        <Grid Grid.Row="1"  Background="#76E383">
+
+            <StackPanel Grid.RowSpan="3">
+
+                <Image Source="./Resources/122.png"/>
+
+                
+
+            </StackPanel>
+            <StackPanel VerticalAlignment="Bottom" Grid.Row="2">
+
+
+            </StackPanel>
+        </Grid>
+                
+
+        <StackPanel Background="#76E383" 
+                    Grid.Column="1" 
+                    Grid.Row ="1" 
+                    Height="40" 
+                    VerticalAlignment="Top">
+
+            <TextBlock  Width="600"
+                Text="{Binding ElementName=MainFrame, Path=Content.Title}"
+                       HorizontalAlignment="Left" 
+                       VerticalAlignment="Center"
+                       FontSize="25" 
+                       Margin="4" 
+                       Foreground="#000" 
+                       FontWeight="Bold">
+            </TextBlock>
+        </StackPanel>
+
+        <Frame Name="MainFrame"
+                   NavigationUIVisibility="Hidden"
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   Margin="0,40,0,0"/>
+        
+        
+
+        <Frame Name="MenuFrame" Margin="0,150,0,5"/>
+        
+        
+
+    </Grid>
+</Window>

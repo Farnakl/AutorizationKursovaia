@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="edc0889550c2456bbb2d5531dde96d56" Name="Diagram1">
+        <EntityTypeShape EntityType="Anayatov_magazineModel.Education" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.Employees" Width="1.5" PointX="5.25" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.FamilyStatus" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.JobTitle" Width="1.5" PointX="3" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.Operation" Width="1.5" PointX="7.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.Product" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.Provider" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.StatusProduct" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.StatusProvider" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.TypeOfProduct" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.Unit" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_Employees_Education" ManuallyRouted="false" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_Employees_FamilyStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_Employees_JobTitle" ManuallyRouted="false" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_Operation_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_Operation_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_Product_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_Product_StatusProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_Product_TypeOfProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_Product_Unit1" ManuallyRouted="false" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_Provider_StatusProvider" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.Session" Width="1.5" PointX="5.25" PointY="19.5" />
+        <EntityTypeShape EntityType="Anayatov_magazineModel.User" Width="1.5" PointX="7.5" PointY="15" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_User_Employees" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_User_JobTitle" />
+        <AssociationConnector Association="Anayatov_magazineModel.FK_User_Session" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

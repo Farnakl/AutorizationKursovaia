@@ -25,7 +25,8 @@
 
             <StackPanel Grid.RowSpan="3">
 
-                <Image Source="./Resources/122.png"/>
+                <Image Width="120" Margin="10"  
+                    Source="./Resources/vkusvill.png"/>
 
                 
 
@@ -49,7 +50,7 @@
                        VerticalAlignment="Center"
                        FontSize="25" 
                        Margin="4" 
-                       Foreground="#000" 
+                       Foreground="White" 
                        FontWeight="Bold">
             </TextBlock>
         </StackPanel>

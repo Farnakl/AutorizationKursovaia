@@ -64,6 +64,7 @@
         <StackPanel Grid.Row="2">
             <Button Width="100"
                     Margin="5"
+                     Foreground="White"
                     HorizontalAlignment="Left"
                 x:Name="BtnBack"
                 Click="BtnBack_Click"

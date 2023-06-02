@@ -30,6 +30,7 @@
                 Margin="130,0,0,0"
                  HorizontalAlignment="Left"
                    VerticalAlignment="Center"
+                 Foreground="White"
                 Click="BtnSearch_Click" Height="32"/>
 
         <Button Width="159"
@@ -38,6 +39,7 @@
                 Margin="130,0,0,0"
                  HorizontalAlignment="Right"
                    VerticalAlignment="Center"
+                 Foreground="White"
                 Click="BtnAdd_Click" Height="32"/>
 
 

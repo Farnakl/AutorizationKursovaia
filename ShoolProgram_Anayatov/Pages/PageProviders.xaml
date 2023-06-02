@@ -27,7 +27,7 @@
                 Content="Поиск"
                 Name="BtnSearch"
                 Margin="130,0,0,0"
-               
+                Foreground="White"
                  HorizontalAlignment="Left"
                    VerticalAlignment="Center"
                 Click="BtnSearch_Click" Height="32"/>
@@ -35,6 +35,7 @@
         <Button Width="178"
                 Content="Добавить поставщика"
                 Name="BtnAdd"
+                 Foreground="White"
                 Margin="130,0,0,0"
                  HorizontalAlignment="Right"
                    VerticalAlignment="Center"

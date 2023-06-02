@@ -59,7 +59,8 @@
                     HorizontalAlignment="Left"
                 x:Name="BtnBack"
                 Click="BtnBack_Click"
-                Content="Назад"/>
+                Content="Назад"
+                    Foreground="White"/>
         </StackPanel>
     </Grid>
 </Page>

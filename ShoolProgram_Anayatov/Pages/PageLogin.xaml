@@ -12,6 +12,7 @@
        
             
             <Button
+                 Foreground="White"
                 Width="225"
                 Name="BtnLogin"
                 Margin="2"
